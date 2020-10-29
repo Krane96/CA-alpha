@@ -7,9 +7,8 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
 }
 .navbar .logo img{
-    position: absolute;
-    left: 30px;
-    top: 20px;
+    position: relative;  
+      
 }
 .navbar{
     display: flex;
@@ -18,11 +17,12 @@ body{
 }
 nav{
     position: relative;
-    top: 20px;
-    left: 33%;
     font-size: 22px;
     font-weight: normal;
     text-transform: uppercase;
+    float: left;
+    left: 20px;
+    
 }
 nav ul{
     display: inline-block;
@@ -32,11 +32,10 @@ nav ul li{
     display: inline-block;
     margin-left: 20px;
 }
-.header .icons img{
-    float: right;
-    right: 20px;
+.navbar .icons img{
     position: relative;
-    top: 30px;
+    float: right;
+    left: 580px;
     margin: 5px;
 }
 a{
@@ -151,7 +150,7 @@ h4{
     background: #002623;
     color: white;
     font-size: 14px;
-    padding: 150px 0 20px
+    padding: 100px 0 20px;
 }
 .footer p{
     color: white;
@@ -164,7 +163,7 @@ h4{
     margin-bottom: 20px;
 }
 .footer-col-1{
-    flex-basis: 30%;
+    flex-basis: 25%;
     margin-left: -100px;
     margin-top: -30px;
     position: relative;
@@ -177,17 +176,29 @@ h4{
     margin-top: -15px;
     margin-left: -100px;
 }
-.footer-col-3 , .footer-col-4{
+.footer-col-4{
     flex-basis: 12%;
     margin-top: -50px;
 }
 .footer-col-3{
     position: absolute;
+    display: flex;
+    align-items: center;
 }
 ul{
     list-style: none;
 }
-.footer-col-1 img{
-    width: 150px;
-    margin-top: -100px;
+.copyright{
+    text-align: center;
+    position: relative;
+    right: 20px;
+
+}
+.socials img{
+ margin: 5px;
+ margin-top: 10px;
+}
+.row-2{
+    align-items: baseline;
+    display: flex;
 }

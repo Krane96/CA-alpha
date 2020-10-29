@@ -5,43 +5,72 @@
 }
 body{
     font-family: 'Roboto Condensed', sans-serif;
+    background-image: linear-gradient(to top, #256246, #438478, #6ea6a7, #a0c9d2, #d5ecf8);
 }
-.navbar .logo img{
-    position: absolute;
-    left: 30px;
-    top: 20px;
+button{
+    font-size: 20px;
+    font-weight: 800;
+    color: #edf0f1;
+    text-decoration: none;
+    width: 200px;
 }
-.navbar{
+header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10%;
 }
-nav{
-    position: relative;
-    top: 20px;
-    left: 33%;
-    font-size: 22px;
-    font-weight: normal;
-    text-transform: uppercase;
+.logo{
+    cursor: pointer;
 }
-nav ul{
-    display: inline-block;
+.nav-links{
     list-style: none;
 }
-nav ul li{
+.nav-links li{
     display: inline-block;
-    margin-left: 20px;
+    padding: 0px 20px;
+
 }
-.header .icons img{
-    float: right;
-    right: 20px;
-    position: relative;
-    top: 30px;
-    margin: 5px;
+.nav-links li a{
+    transition: all 0.3s ease 0s;
 }
-a{
+.nav-links li a:hover{
+    color:  rgba(165, 162, 162, 0.623);
+}
+header{
+    background-color: rgb(37, 98, 70);
+}
+button{
+    padding: 9px 25px;
+    background-color: rgb(9, 61, 35);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-transform: uppercase;
+}
+button:hover{
+    background-color: rgba(116, 116, 116, 0.424);
+}
+li a{
+    font-size: 25px;
+    text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    font-weight: 700;
+    color: seashell;
+    
+}
+.nav2::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:#fff;
+    transition: width .3s;
+}
+.nav2:hover::after{
+    width: 100%;
+    transition: width .3s;
 }
 
 .container{
@@ -59,11 +88,11 @@ a{
 .col-2{
     flex-basis: 50%;
     min-width: 300px;
+    padding: 10%;
 }
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
-    border-radius: 90px;
 }
 .col-2 h1{
     font-size: 50px;

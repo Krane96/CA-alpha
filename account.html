@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rainydays</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"></a>
+        <img class="logo" src="logo.png" width="150px">
+        <a href="index.html"></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav2">Home</a></li>
+                <li><a href="products.html" class="nav2">mens</a></li>
+                <li><a href="products.html" class="nav2">womens</a></li>
+                <li><a href="products.html" class="nav2">accessories</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="account.html"><Button>Login</Button></a>
+    </header>
+    </div>
+    </div>
+    </div>
+    </div>
+
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="backgroundresized.jpg" alt="">
+            </div>
+            <div class="col-2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="Indicator">
+                    </div>
+                    <form id="LoginForm"> 
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+                    <form id="RegForm">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Password">
+                        <button type="Submit" class="btn">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="logo.png">
+            <h2>Follow us</h2>
+            <div class="socials">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+            </div>
+        </div>
+        <ul class="footer-right">
+            <li>
+                <h2>Help</h2>
+                <ul class="box">
+                    <li><a href="#">Returns & Delivery</a></li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </li>
+            <li class="features">
+                <h2>My account</h2>
+                <ul class="box">
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <li><a href="#">Forgot password</a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>Contact</h2>
+                <ul class="box">
+                    <li><a href="#">Email: rainydays@hotmail.com</a></li>
+                    <li><a href="#">phone: (00)1234567</a></li>
+                    <li><a href="#">Address: Elvebakken 5a, 5067, Bergen </a></li>
+                    <img src="maps.png" width="100%">
+                </ul>
+            </li>
+        </ul>
+
+        <div class="footer-bottom">
+            <p>All rights reserved by &copy;Rainydays 2020</p>
+        </div>
+    </footer>
+    </div>
+    </div>
+    </div>
+
+    <Script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+        function login(){
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+    </Script>
+
+</body>
+
+</html>

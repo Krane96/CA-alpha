@@ -103,7 +103,7 @@ li a{
     padding: 20%;
 }
 .main{
-    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../CA-alpha/images/snadder4.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../CA-alpha/images/snadder4_50.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -495,7 +495,7 @@ th:last-child{
 }
 .account-page{
     padding: 400px 0;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../CA-alpha/images/snadder4.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../CA-alpha/images/snadder4_50.jpg);
     background-size: cover;
 }
 .form-container{

@@ -104,6 +104,10 @@ li a{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.main img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
@@ -530,9 +534,6 @@ form input{
     margin: 10px 0;
     padding: 0 10px;
     border: 1px solid #cccccc;
-}
-.main img{
-    display: none;
 }
 form .btn{
     width: 100%;

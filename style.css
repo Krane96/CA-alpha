@@ -31,6 +31,8 @@ header img{
 .nav-links li{
     display: inline-block;
     padding: 0px 20px;
+    align-items: center;
+    letter-spacing: 1px;
 
 }
 .nav-links li a{
@@ -44,18 +46,21 @@ header{
 }
 button{
     padding: 8px 14px;
-    background-color: rgb(57, 83, 226);
+    background-color: #35547a;
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     text-transform: uppercase;
     line-height: 20px;
-    font-weight: 800;
+    font-weight: 700;
+    max-height: 40px;
+    letter-spacing: 1px;
 }
 button:hover{
-    background-color: rgba(7, 6, 99, 0.424);
+    background-color: #9c9ea0;
 }
+
 li a{
     font-size: 25px;
     text-transform: uppercase;
@@ -76,7 +81,10 @@ li a{
     width: 100%;
     transition: width .3s;
 }
-
+.cart{
+    width: 60px;
+    
+}
 .container{
     max-width: 1300px;
     margin: auto;
@@ -90,34 +98,42 @@ li a{
     justify-content: space-around;
 }
 .col-2{
-    flex-basis: 50%;
+    flex-basis: 100%;
     min-width: 300px;
-    padding: 10%;
+    padding: 20%;
 }
 .main{
-    background: radial-gradient(#fff, #faadba);
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../CA-alpha/images/snadder4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .col-2 img{
     max-width: 100%;
     padding: 50px 0;
+    background-size: cover;
 }
 .col-2 h1{
-    font-size: 50px;
+    font-size: 70px;
     line-height: 60px;
     margin: 25px 0;
     text-transform: uppercase;
+    font-weight: bolder;
+    color: whitesmoke;
 }
 .btn{
     display: inline-block;
-    background:black;
+    background: #011c39;
     color: white;
-    padding: 8px 30px;
+    padding: 15px 40px;
     margin: 30px 0;
     border-radius:  30px;
     text-decoration: none;
+    font-weight: 800;
+    font-size: 22px;
+    box-shadow: snow;
 }
 .btn:hover{
-    background: lightslategray;
+    background: rgb(30, 36, 42);
 }
 .header{
     background: linear-gradient(rgb(253, 172, 79),rgb(255, 255, 255));
@@ -139,12 +155,22 @@ li a{
     padding-left: 25px;
     padding-right: 25px;
 }
+.small-container-products{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.small-container-products h2{
+    padding: 50px;
+}
 .col-4{
-    flex-basis: 25%;
+    flex-basis: 20%;
     padding: 10px;
     min-width: 200px;
     margin-bottom: 50px;
     transition: transform 0.5s;
+    max-width: 100%;
 }
 .col-4 img{
     width: 100%;
@@ -158,9 +184,9 @@ li a{
 }
 .title::after{
     content: '';
-    background: orangered;
-    width: 80px;
-    height: 5px;
+    background: #011c39;
+    width: 50%;
+    height: 4px;
     border-radius: 5px;
     position: absolute;
     bottom: 0;
@@ -170,6 +196,7 @@ li a{
 h4{
     color: black;
     font-weight: bold;
+    text-decoration: none;
 }
 .col-4 p{
     font-size: 14px;
@@ -220,7 +247,7 @@ footer{
     margin-left: 50px;
 }
 .footer-left img{
-    width: 40%;
+    width: 25%;
     margin-bottom: 40px;
 }
 h2{
@@ -292,8 +319,10 @@ h2{
     margin: 100px auto 50px;
 }
 select{
-    border: 1px solid coral;
+    border: 1.5px solid #011c39;
     padding: 5px;
+    text-transform: capitalize;
+    font-weight: 600;
 }
 select:focus{
     outline: none;
@@ -303,7 +332,7 @@ select:focus{
 }
 .page-btn span{
     display: inline-block;
-    border: 1px solid #faadba;
+    border: 1.5px solid #011c39;
     margin-left: 10px;
     width: 40px;
     height: 40px;
@@ -312,7 +341,7 @@ select:focus{
     cursor: pointer;
 }
 .page-btn span:hover{
-    background: darkblue;
+    background: #35547a;
     color: whitesmoke;
 }
 .single-product{
@@ -320,6 +349,37 @@ select:focus{
 }
 .single-product .col-2 img{
     padding: 0;
+}
+.row-product-detail{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2-product-detail{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2-product-detail h3{
+    text-transform: capitalize;
+}
+.col-2-product-detail img{
+    max-width: 100%;
+    padding: 50px 0;
+    padding-right: 50px;
+}
+.col-2-product-detail h1{
+    font-size: 40px;
+    line-height: 60px;
+    color: black;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-weight: bolder;
+    
+}
+.small-container-products, .row-2 p{
+    text-transform: uppercase;
+    font-weight: 600;
 }
 .single-product .col-2{
     padding: 20px;
@@ -340,13 +400,13 @@ select:focus{
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
-    border: 1px solid darkorange;
+    border: 1.5px solid #011c39;
 }
 input:focus{
       outline: none;
 }
 .single-product .fa{
-    color: darkorange;
+    color: #011c39;
     margin-left: 10px;
 }
 .small-image-row{
@@ -369,15 +429,32 @@ table{
     display: flex;
     flex-wrap: wrap;
 }
+.small-container-cart{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 th{
     text-align: left;
-    padding: 5px;
+    padding: 8px;
     color: whitesmoke;
-    background-color: #000000;
+    background-color:#011c39;
     font-weight: normal;
+    text-transform: capitalize;
 }
 td{
     padding: 10px 5px;
+}
+td p{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+}
+.cart-info small{
+    font-size: 14px;
 }
 td input{
     width: 40px;
@@ -385,8 +462,10 @@ td input{
     padding: 5px;
 }
 td a{
-    color: darkblue;
+    color: #011c39;
     font-size: 12px;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 td img{
     width: 80px;
@@ -398,9 +477,15 @@ td img{
     justify-content: flex-end;
 }
 .total-price table{
-    border-top: 3px solid coral;
+    border-top: 3px solid #011c39;
     width: 100%;
     max-width: 350px;
+}
+.checkout .btn{
+    margin-right: 50px;
+    margin-top: 55px;
+    text-transform: uppercase;
+    font-size: 18px;
 }
 td:last-child{
     text-align: right;
@@ -409,8 +494,9 @@ th:last-child{
     text-align: right;
 }
 .account-page{
-    padding: 50px 0;
-    background: ;
+    padding: 400px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../CA-alpha/images/snadder4.jpg);
+    background-size: cover;
 }
 .form-container{
     background: #fff;
@@ -454,6 +540,9 @@ form .btn{
     border: none;
     cursor: pointer;
     margin: 10px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
 }
 form .btn:focus{
     outline: none;

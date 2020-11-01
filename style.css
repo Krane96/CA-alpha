@@ -100,13 +100,25 @@ li a{
     padding: 20%;
 }
 .main{
-    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
-    background-size: cover;
-    background-repeat: no-repeat;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #e7f2f4;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1px;
 }
 .main img{
-    background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    max-height: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5)rgba(0,0,0,0.5));
+  }
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .col-2 img{
     max-width: 100%;

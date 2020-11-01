@@ -19,9 +19,6 @@ header{
     align-items: center;
     padding: 20px 10%;
 }
-header img{
-    padding-left: -200px;
-}
 .logo{
     cursor: pointer;
 }
@@ -130,7 +127,6 @@ li a{
     text-decoration: none;
     font-weight: 800;
     font-size: 22px;
-    box-shadow: snow;
 }
 .btn:hover{
     background: rgb(30, 36, 42);

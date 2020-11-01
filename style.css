@@ -535,6 +535,9 @@ form input{
     padding: 0 10px;
     border: 1px solid #cccccc;
 }
+.main img{
+    display: none;
+}
 form .btn{
     width: 100%;
     border: none;
